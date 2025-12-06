@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="form-container">
+    <form class="profile-form">
+      <label><i class="fa fa-user"></i> Ім’я:</label>
+      <input type="text" name="name" placeholder="Введіть ім’я">
+
+      <label><i class="fa fa-envelope"></i> Пошта:</label>
+      <input type="email" name="email" placeholder="example@gmail.com">
+
+      <label><i class="fa fa-lock"></i> Пароль:</label>
+      <input type="password" name="password" placeholder="Пароль">
+
+      <label><i class="fa fa-venus-mars"></i> Стать:</label>
+      <div class="gender">
+        <label><input type="radio" name="gender" value="male"> Чоловіча</label>
+        <label><input type="radio" name="gender" value="female"> Жіноча</label>
+      </div>
+
+      <label><i class="fa fa-calendar"></i> День народження:</label>
+      <input type="date" name="birthdate">
+
+      <label class="checkbox">
+        <input type="checkbox"> Підтверджую
+      </label>
+
+      <div class="buttons">
+        <button type="submit" class="registr">Зареєструватись</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

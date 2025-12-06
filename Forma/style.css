@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: rgb(199, 150, 150);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background: rgba(247, 247, 247);
+  padding: 25px 35px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  width: 350px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #c6c6c6;
+  font-size: 14px;
+}
+
+.gender label {
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.registr {
+  width: 145px;
+  height: 32px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #c23a3a;
+  color: white;
+  font-size: 13px;
+}
+
+i {
+  color: rgb(145, 38, 38);;
+  margin-right: 5px;
+}

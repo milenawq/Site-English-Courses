@@ -1,0 +1,600 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia", serif;
+}
+
+body {
+    background: rgba(255,255,255,0.9); 
+}
+
+.one-slaid {
+    min-height: 90vh;
+}
+
+header {
+    width: 100%;
+    max-width: 1530px; 
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgb(126, 18, 22);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(245, 233, 233);
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    min-width: 350px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(245, 233, 233);
+    font-weight: 600;
+    transition: 0.3s; 
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+.btn-header {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    
+}
+
+.btn-header:hover {
+    background: #ec6a7d;
+    color: rgb(255, 255, 255);
+}
+
+main {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+    gap: 40px;
+}
+
+.text-start {
+    flex: 1;
+}
+
+.text-start1 {
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 10px 10px 15px rgba(126, 18, 22, 0.3);
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.2); 
+}
+
+p {
+    margin: 25px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn-main {
+    display: inline-block;
+    background: #b01f35;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background: #ec5151;
+}
+
+.teacher img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 10px;
+    transform: translateY(30px);
+}
+
+/* планшет */
+@media (max-width: 992px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 60px 30px;
+        text-align: center;
+    }
+
+    .text-start1 {
+        width: 80%;
+    }
+
+    nav ul {
+        gap: 15px;
+        min-width: auto;
+    }
+}
+
+/* телефон */
+@media (max-width: 600px) { 
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    .text-start1 {
+        width: 100%;
+    }
+
+    .teacher img {
+        max-width: 100%;
+        transform: none;
+    }
+}
+
+
+
+.why-us {
+    background: #b0183c;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.why-us-text{
+    width: 700px;
+    height: 70px;
+    margin: 40px auto;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.why-us h2 {
+    font-size: 52px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 60px;
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.square-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 40px;
+}
+
+.square {
+    width: 45%;
+    background: #fde9e9;
+    padding: 45px;
+    position: relative;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.15);
+    text-align: left;
+}
+
+.square i {
+    font-size: 36px;
+    color: #b0183c;
+    margin-bottom: 15px;
+}
+
+.why-us-text-h3 {
+    width: 590px;
+    height: 45px;
+    box-shadow: 5px 5px 10px rgba(117, 115, 115, 0.3);
+}
+
+.square h3 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #b0183c;
+}
+
+.square p {
+    font-size: 16px;
+}
+
+.courses-levels {
+    background: #f8d9df;
+    padding: 60px 0;
+    text-align: center;
+    min-height: 90vh;
+}
+
+.level-text {
+    max-width: 800px;
+    height: auto;
+    margin: 80px auto 40px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.courses-levels h2 {
+    font-size: 40px;
+    color: #a31441;
+    font-weight: 800;
+    margin-bottom: 60px;
+    text-shadow: 4px 4px 0px #e3b3c0;
+}
+
+.courses-levels-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.level-card {
+    width: 200px;
+    text-align: center;
+}
+
+.level-card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 30px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.level-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.level-card p {
+    font-size: 13px;
+    color: #333;
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+.img-repeat {
+    background-image: url("image/rainbow3.jpg");
+    background-repeat: repeat-x;
+    height: 110px;
+}
+
+
+.faq {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 100px;
+    background: #fff;
+}
+
+.faq-left {
+    width: 45%;
+    background: #b0103a;
+    color: rgb(20, 15, 46);
+    padding: 60px;
+    position: relative;
+    height: 720px;
+    transform: translateY(70px);
+}
+
+.faq-left-text {
+    max-width: 500px;
+    width: 100%;
+    padding: 40px 20px;
+    height: auto;
+    margin: 80px auto;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.faq-left h2 {
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.faq-left p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.btn-register {
+    margin-top: 40px;
+    padding: 15px 35px;
+    background: rgb(20, 15, 46);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-register:hover {
+    background: white;
+    color: black;
+}
+
+.faq-right {
+    width: 45%;
+}
+
+.faq-right-text {
+    width: 600px;
+    height: 110px;
+    margin: 50px auto;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.faq-title {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Georgia', serif;
+    color: #a0002c;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.25);
+}
+
+.faq-question {
+    background: #f6f6f6;
+    margin-bottom: 20px;
+    padding: 18px 25px;
+    position: relative;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.faq-question h3 {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 40px 60px;
+  text-align: center;
+  color: #222;
+}
+
+.footer-logo {
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.footer-nav {
+  display: inline-block;
+}
+
+.footer-menu {
+  list-style: none;
+  display: inline-flex;
+  margin-right: 20px;
+}
+
+.footer-menu li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+}
+
+.footer-menu li a:hover {
+  color: #696969;
+}
+
+hr {
+  margin: 30px 0 15px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.footer-author {
+  font-size: 14px;
+  color: #5b5a5a;
+  margin: 0;
+}
+
+
+/* планшет */
+
+@media (max-width: 992px) {
+    /* WHY-US */
+    .why-us-text {
+        width: 90%;
+        height: auto;
+    }
+
+    .why-us-text-h3 {
+        font-size: 22px;
+        text-align: center;
+        white-space: normal;
+        padding: 10px 15px;
+        width: 100%;
+    }
+
+    .square {
+        width: 80%;
+        padding: 30px;
+    }
+
+    /* COURSES */
+    .courses-levels-wrapper {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .level-card {
+        width: 45%; 
+    }
+
+    .level-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* FAQ */
+    .faq {
+        padding: 60px 20px;
+    }
+
+    .faq-left-text h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .faq-right {
+        margin-top: 40px;
+    }
+
+    .faq-right-text {
+        width: 320px;
+    }
+
+    .faq-title {
+        font-size: 40px;
+    }
+
+    .faq-question h3 {
+        font-size: 22px;
+    }
+
+    .faq-question p {
+        font-size: 16px;
+    }
+}
+
+    /* телефон */
+
+    @media (max-width: 600px) {
+    /* WHY-US */
+    .why-us h2 {
+        font-size: 34px;
+    }
+
+    .square {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .square h3 {
+        font-size: 22px;
+    }
+
+    .square p {
+        font-size: 15px;
+    }
+
+    /* COURSES */
+
+    .level-text {
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    .level-card {
+        width: 100%;
+    }
+
+    .level-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* FAQ */
+    .faq-left-text {
+        max-width: 220px;
+    }
+
+    .faq-left-text h2 {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .faq p {
+        text-align: center;
+    }   
+
+    .btn-register {
+        width: 100%;
+        font-size: 10px;
+        padding: 12px 0;
+    }
+
+    .faq-right {
+        width: 100%;
+    }
+
+    .faq-right-text {
+        width: 90%;        
+        max-width: 350px;   
+        height: auto;   
+        margin: 20px auto;
+    }
+
+    .faq-title {
+        font-size: 20px;
+    }
+
+    .faq-right-text h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .faq-question {
+        margin-bottom: 25px;
+    }
+
+    .faq-question h3 {
+        font-size: 20px;
+    }
+
+    .faq-question p {
+        font-size: 15px;
+    }
+}
